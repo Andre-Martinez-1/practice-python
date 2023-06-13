@@ -1,5 +1,5 @@
 #Programming code - Programming code is a set of written computer instructions, guided by rules, using a computer programming language. It might help to think of the computer instructions as a detailed, step-by-step recipe for performing tasks. The instructions tell computers and machines how to perform an action. Programming code may also be referred to as source code or scripts.
-
+'''
 Programming languages - Programming languages are similar to human spoken languages in that they both use syntax and semantics. Programming languages are used to write computer programs.  Some common programming languages include Python, Java, C, C++, C#, and R.
 
 Syntax - Syntax is a set of rules for how statements are constructed in both human and computer languages. Programming syntax includes rules for the order of elements in programming instructions, as well as the use of special characters and their placements in statements. This concept is similar to the syntax rules for grammar and punctuation in human language.
@@ -19,4 +19,4 @@ Input - Input is information that is provided to a program by the end user. Inpu
 Functions - A function is a reusable block of code that performs a specific task.
 
 Variables - Variables are used to temporarily store changeable values in programming code. 
-
+'''
