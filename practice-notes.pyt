@@ -60,4 +60,29 @@ Create a reusable function - Replace duplicate code with one reusable function t
 Refactor code - Update code so that it is self-documenting and the intent of the code is clear.
 
 Add comments - Adding comments is part of creating self-documenting code. Using comments allows you to leave notes to yourself and/or other programmers to make the purpose of the code clear.
+
+Comparison Operators with Equations
+The following examples demonstrate how to use comparison operators with the data types int (integers, whole numbers) and float (number with a decimal point or fractional value). Comparison operators return Boolean results. As you learned previously, Boolean is a data type that can hold only one of two values: True or False.  
+
+The comparison operators include: 
+
+==    (equality) 
+
+!=     (not equal to) 
+
+>       (greater than)
+
+<      (less than)
+
+>=    (greater than or equal to)
+
+<=    (less than or equal to)
+
+
+PART 1: Equality == and Not Equal To != Operators
+In Python, you can use comparison operators to compare values. When a comparison is made, Python returns a Boolean result: True or False. Note that Boolean data types are not string data types (Boolean True is not equal to the string "True").  
+
+To check if two values are the same, use the equality operator: == 
+
+To check if two values are not the same, use the not equal to operator: != 
 '''
