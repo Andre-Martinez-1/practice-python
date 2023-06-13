@@ -40,4 +40,24 @@ We looked at a few examples of built-in functions in Python, but being able to d
 
 After the colon, the function body starts. It’s important to note that in Python the function body is delimited by indentation. This means that all code indented to the right following a function definition is part of the function body. The first line that’s no longer indented is the boundary of the function body. It’s up to you how many spaces you use when indenting -- just make sure to be consistent. So if you choose to indent with four spaces, you need to use four spaces everywhere in your code.
 
+
+In the Functions segment, you learned how to define and call functions, utilize a function’s parameters, and return data from a function. You also learned how to differentiate and convert between different data types utilizing variables. Plus, you learned a few best practices for writing reusable and readable code. 
+
+Terms
+return value - the value or variable returned as the end result of a function
+
+parameter (argument) -  a value passed into a function for use within the function
+
+refactoring code - a process to restructure code without changing functionality
+
+Knowledge
+The purpose of the def() keyword is to define a new function. 
+
+Best practices for writing code that is readable and reusable:
+
+Create a reusable function - Replace duplicate code with one reusable function to make the code easier to read and repurpose.
+
+Refactor code - Update code so that it is self-documenting and the intent of the code is clear.
+
+Add comments - Adding comments is part of creating self-documenting code. Using comments allows you to leave notes to yourself and/or other programmers to make the purpose of the code clear.
 '''
