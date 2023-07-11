@@ -155,6 +155,46 @@ Returns a True result if comparison1 is false.
 
 If comparison1 is true, then returns False.
 
+Study Guide: Week 2 Graded Quiz
+It is time to prepare for the Week 2 graded quiz. Please review the following items from this week before starting the Week 2 Graded Quiz. If you would like to refresh your memory on these materials, please revisit the Study Guides located before each Practice Quiz in Week 2 : 
+Study Guide: Expressions and Variables
+, 
+Study Guide: Functions
+, and 
+Study Guide: Conditionals
+.  
 
+Knowledge  
+How to assign values to variables and use them in code
+
+How to construct a function and use function parameters
+
+How comparison and logical operators can be used, 
+
+How comparison and logical operators behave with different data types
+
+What type of results simple and complex comparisons produce
+
+How to alphabetize strings using comparison operators
+
+What must appear after the if and elif keywords
+
+What the elif keyword does 
+
+When an if,  elif, or else-statement will execute
+
+How to use the floor division //  and modulo % operators and why
+
+How to use logical operators with comparison operators to develop complex conditional statements within an if-elif-else block
+
+Best practices for coding and their benefits
+
+What “self-documenting code” means
+
+
+There may be a few questions on the quiz that will ask you about either the output of a small block of code or the value of part of the code. Make sure to read the instructions carefully on those questions.
+
+Anatomy of a While Loop
+A while loop will continuously execute code depending on the value of a condition. It begins with the keyword while, followed by a comparison to be evaluated, then a colon. On the next line is the code block to be executed, indented to the right. Similar to an if statement, the code in the body will only be executed if the comparison is evaluated to be true. What sets a while loop apart, however, is that this code block will keep executing as long as the evaluation statement is true. Once the statement is no longer true, the loop exits and the next line of code will be executed.  
 
 '''
