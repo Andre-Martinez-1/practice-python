@@ -85,4 +85,76 @@ In Python, you can use comparison operators to compare values. When a comparison
 To check if two values are the same, use the equality operator: == 
 
 To check if two values are not the same, use the not equal to operator: != 
+
+We just covered the if statement, which executes code if an evaluation is true and skips the code if it’s false. But what if we wanted the code to do something different if the evaluation is false? We can do this using the else statement. The else statement follows an if block, and is composed of the keyword else followed by a colon. The body of the else statement is indented to the right, and will be executed if the above if statement doesn’t execute.
+
+We also touched on the modulo operator, which is represented by the percent sign: %. This operator performs integer division, but only returns the remainder of this division operation. If we’re dividing 5 by 2, the quotient is 2, and the remainder is 1. Two 2s can go into 5, leaving 1 left over. So 5%2 would return 1. Dividing 10 by 5 would give us a quotient of 2 with no remainder, since 5 can go into 10 twice with nothing left over. In this case, 10%5 would return 0, as there is no remainder.
+
+Building off of the if and else blocks, which allow us to branch our code depending on the evaluation of one statement, the elif statement allows us even more comparisons to perform more complex branching. Very similar to the if statements, an elif statement starts with the elif keyword, followed by a comparison to be evaluated. This is followed by a colon, and then the code block on the next line, indented to the right. An elif statement must follow an if statement, and will only be evaluated if the if statement was evaluated as false. You can include multiple elif statements to build complex branching in your code to do all kinds of powerful things!
+
+Study Guide: Conditionals
+This study guide provides a quick-reference summary of what you learned in this lesson and serves as a guide for the upcoming practice quiz.  
+
+In the Conditionals segment, you learned about the built-in Python operators used for comparing values and the logical operators for making complex comparisons. You also learned how to use operators in if-else-elif blocks. 
+
+ 
+
+Knowledge
+Comparison operators with numerical values
+Comparison expressions return a Boolean result (True or False). 
+
+x == y        If x is equal to y, return True. Else, return False.
+
+x != y         If x is not equal to y, return True. Else, return False.
+
+x < y          If x is less than y, return True. Else, return False.
+
+x <= y        If x is less than or equal to y, return True. Else, return False.
+
+x > y          If x is greater than y, return True. Else, return False.
+
+x >= y        If x is greater or equal to y, return True. Else, return False.
+
+Comparison operators with strings
+Comparison expressions with strings also return a Boolean result (True or False).
+
+"x" == "y"  If the words are the same, return True. Else, return False.
+
+"x" != "y"   If the words are not the same, return True. Else, return False.
+
+When used with strings, the following comparison expressions will alphabetize the strings.
+
+"x" < "y"   	If string "x"  has a smaller Unicode value than string "y", return True.  Else, return False.
+
+"x" <= "y" 	If the Unicode value for string "x" is smaller than or equal to the Unicode value of string "y", return True. Else, return False.
+
+"x" > "y"    	If string "x" has a larger Unicode value than string "y", return True. Else, return False.
+
+"x" >= "y"  	If the Unicode value for string "x" is greater than or equal to the Unicode value of string "y", return True. Else, return False.
+
+Logical operators
+Logical operators are used to combine comparison expressions and also return Boolean results (True or False).
+
+comparison1 and comparison2 
+
+Returns a True result if both comparison1 and comparison2 are true. 
+
+If they are not both true, return False.
+
+comparison1 or comparison2 
+
+Returns a True result if either comparison1 and/or comparison2 are True. 
+
+If neither comparison is true, return False.
+
+not comparison1
+
+Returns the inverse Boolean value of the comparison. 
+
+Returns a True result if comparison1 is false. 
+
+If comparison1 is true, then returns False.
+
+
+
 '''
