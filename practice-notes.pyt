@@ -207,4 +207,106 @@ Another easy mistake that can happen when using loops is introducing an infinite
 
 In the Coursera code blocks, you may see an error message that reads "Evaluation took more than 5 seconds to complete." This means that the code encountered an infinite loop, and it timed out after 5 seconds. You should take a closer look at the code and variables to spot where the infinite loop is.
 
+while Loops
+A while loop executes the body of the loop while a specified condition remains True. They are commonly used when there’s an unknown number of operations to be performed, and a condition needs to be checked at each iteration.
+
+Common Errors in while Loops
+If you get an error message on a loop or it appears to hang, your debugging checklist should include the following checks:
+
+Failure to initialize variables. Make sure all the variables used in the loop’s condition are initialized before the loop.
+
+Unintended infinite loops. Make sure that the body of the loop modifies the variables used in the condition, so that the loop will eventually end for all possible values of the variables. You can often prevent an infinite loop by using the break keyword or by adding end criteria to the condition part of the while loop.
+
+ 
+
+while Loop Terms
+while loop - Tells the computer to execute a set of instructions while a specified condition is True. In other words, while loops keep executing the same group of instructions until the condition becomes False.
+
+infinite loop - Missing a method for exiting the loop, causing the loop to run forever.
+
+break - A keyword that can be used to end a loop at a specific point. 
+
+ 
+
+Math Concepts on the Practice Quiz
+The coding problems on the upcoming practice quiz will involve a few math concepts. Don’t worry if you are rusty on math. You will have plenty of support with these concepts on the quiz. The following is a quick overview of the math terms you will encounter on the quiz:  
+
+prime numbers - Integers that have only two factors, which are the number itself multiplied by 1. The lowest prime number is 2.
+
+prime factors - Prime numbers that are factors of an integer. For example, the prime numbers 2 and 5 are the prime factors of the number 10 (2x5=10). The prime factors of an integer will not produce a remainder when used to divide that integer. 
+
+divisor - A number (denominator) that is used to divide another number (numerator). For example, if the number 10 is divided by 5, the number 5 is the divisor.
+
+sum of all divisors of a number - The result of adding all of the divisors of a number together.  
+
+multiplication table - An integer multiplied by a series of numbers and their results formatted as a table or a list. For example:
+
+                 4x1=4
+                 4x2=8
+                 4x3=12
+                 4x4=16
+                 4x5=20
+
+                 For loops allow you to iterate over a sequence of values. Let's take the example from the beginning of the video:
+
+
+FOR LOOPS                 
+for x in range(5):
+
+  print(x)
+
+Similar to if statements and while loops, for loops begin with the keyword for with a colon at the end of the line. Just like in function definitions, while loops and if statements, the body of the for loop begins on the next line and is indented to the right. But what about the stuff in between the for keyword and the colon? In our example, we’re using the range() function to create a sequence of numbers that our for loop can iterate over. In this case, our variable x points to the current element in the sequence as the for loop iterates over the sequence of numbers. Keep in mind that in Python and many programming languages, a range of numbers will start at 0, and the list of numbers generated will be one less than the provided value. So range(5) will generate a sequence of numbers from 0 to 4, for a total of 5 numbers.
+
+Bringing this all together, the range(5) function will create a sequence of numbers from 0 to 4. Our for loop will iterate over this sequence of numbers, one at a time, making the numbers accessible via the variable x and the code within our loop body will execute for each iteration through the sequence. So for the first loop, x will contain 0, the next loop, 1, and so on until it reaches 4. Once the end of the sequence comes up, the loop will exit and the code will continue.
+
+The power of for loops comes from the fact that it can iterate over a sequence of any kind of data, not just a range of numbers. You can use for loops to iterate over a list of strings, such as usernames or lines in a file.
+
+Not sure whether to use a for loop or a while loop? Remember that a while loop is great for performing an action over and over until a condition has changed. A for loop works well when you want to iterate over a sequence of elements.  
+
+A Closer Look at the Range() Function
+The in keyword, when used with the range() function, generates a sequence of integer numbers, which can be used with a for loop to control the start point, the end point, and the incremental values of the loop.  
+
+Syntax:
+
+123
+for n in range(x, y, z):
+    print(n)
+
+The range() function uses a set of indices that point to integer values, which start at the number 0. The numeric values 0, 1, 2, 3, 4 correlate to ordinal index positions 1st, 2nd, 3rd, 4th, 5th. So, when a range call to the 5th index position is made using range(5) the index is pointing to the numeric value of 4.
+
+Index Number
+
+1st index
+
+2nd index
+
+3rd index
+
+4th index
+
+5th index
+
+Value
+
+0
+
+1
+
+2
+
+3
+
+4
+
+The range() function can take up to three parameters:  range(start, stop, step) 
+
+Start 
+The first item in the range() function parameters is the starting position of the range. The default is the first index position, which points to the numeric value 0. This value is included in the range. 
+
+Stop
+The second item in the range() function parameters is the ending position of the range. There is no default index position, so this index number must be given to the range() parameters. For example, the line for n in range(4) will loop 4 times with the n variable starting at 0 and looping 4 index positions: 0, 1, 2, 3. As you can see, range(4) (meaning index position 4) ends at the numeric value 3. In Python, this structure may be phrased as “the end-of-range value is excluded from the range.” In order to include the value 4 in  range(4), the syntax can be written as range(4+1) or range(5). Both of these ranges will produce the numeric values 0, 1, 2, 3, 4. 
+
+Step
+The third item in the range() function parameters is the incremental step value. The default increment is +1. The default value can be overridden with any valid increment. However, note that the loop will still end at the end-of-range index position, regardless of the incremental value. For example, if you have a loop with the range: for n in range(1, 5, 6), the range will only produce the numeric value 1. This is because the incremental value of 6 exceeded the ending point of the range.
+
 '''
