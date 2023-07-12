@@ -330,5 +330,55 @@ Step - Incremental value
 
 default = 1
 
+Study Guide: for Loops
+This study guide provides a summary of what you learned in this segment and serves as a guide for the upcoming practice quiz.  
+
+In the for Loops segment, you learned about the logical structure and syntax of for loops. You took a closer look at the range() function. You learned about nested for loops and complex nested for loops with if statements. You also learned how to fix common errors in for loops.
+
+
+for Loops vs. while Loops
+for loops and while loops share several characteristics. Both loops can be used with a variety of data types, both can be nested, and both can be used with the keywords break and continue. However, there are important differences between the two types of loops: 
+
+while loops are used when a segment of code needs to execute repeatedly while a condition is true
+
+for loops iterate over a sequence of elements, executing the body of the loop for each element in the sequence
+
+Common for Loop Structures 
+for Loop with range()
+The in keyword with the range() function generates a sequence of integer numbers, which can be used with a for loop to configure the iterations of the code. The range of numbers [0, 1, 2] correlates to ordinal index positions (1st, 2nd, 3rd), rather than the cardinal (quantity) values of the numbers 0, 1, and 2. For example, range(5) means the five index positions in the range [0, 1, 2, 3, 4]. 
+
+The range() function can take up to three parameters. The roles of the three possible range(x,y,z) parameters are:
+
+x = Start - Starting index position of the range 
+
+Default index position is 0.
+
+The starting index position is included in the range. 
+
+Example syntax: range(2, y, z) or range(x+3, y, z) 
+
+y = Stop - Ending index position of range
+
+No default index position. Must include the ending index position in the range() parameters.
+
+Example syntax: range(y)
+
+The value of the ending index position is excluded from the range. 
+
+To include the ending index number, use the expression: y+1 (index + 1)
+
+Example syntax: range(x, y+1, z)
+
+Alternatively, if y = 10, you can write: range(x, 11, z)
+
+z = Step - Incremental value
+
+Default increment is +1.
+
+The default value can be overridden with any valid increment.
+
+The incremental value will end the for loop before it reaches the end of range index position (end of range index minus 1).  
+
+
 
 '''
