@@ -7,14 +7,15 @@ print(6*2-5/(1+4)+3**2)
 # comparison expression will return the Boolean value of True.
 
 
-print(10*4 > 14+23) # Should print True
+'''print(10*4 > 14+23) # Should print True
 
 # The letter "t" has a Unicode value of 116 and the letter "s" has a
 # Unicode value of 115. Since 116 is not less than 115, the 
 # comparison of "tall" < "short" (or 116 < 115) is False. 
 
 print("tall" < "short")  # Should print False
-'''Complicated python question for me good to look over'''
+'''
+'''Complicated python question for me good to look over
 def calculate_storage(filesize):
     block_size = 4096
     # Use floor division to calculate how many blocks are fully occupied
@@ -32,17 +33,17 @@ print(calculate_storage(1))    # Should be 4096
 print(calculate_storage(4096)) # Should be 4096
 print(calculate_storage(4097)) # Should be 8192
 print(calculate_storage(6000)) # Should be 8192
-
+'''
 
 #WHILE LOOP
 
-multiplier = 1
+'''multiplier = 1
 result = multiplier*5
 while result <= 50:
   print(result)
   multiplier += 1
   result = multiplier*5
-print("Done")
+print("Done")'''
 
 # This while loop prints the multiples of 5 between 1 and 50. The
 # "multiplier" variable is initialized with the starting value of 1. 
@@ -74,7 +75,37 @@ A recursive function must include a recursive case and base case. The recursive 
 
 A recursive function will usually have this structure:'''
 
-def recursive_function(parameters):
+'''def recursive_function(parameters):
     if base_case_condition(parameters):
         return base_case_value
-    recursive_function(modified_parameters)
+    recursive_function(modified_parameters)'''
+
+
+# This function will accept an integer variable "end" and count by 10
+# from 0 to the "end" value.
+def count_by_10(end):
+    # Initializeq the "count" variable as a string.
+    count = ""
+
+    # The range function parameters instruct Python to start the count  
+    # at 0 and stop at the variable given as the upper end of the range. 
+    # Since the value of the high end of a range is excluded by default,  
+    # you can make Python include the "end" value by adding +1 to it. 
+    # The third parameter tells Python to increment the count by 10.
+    for number in range(0,end+1,10):
+
+        # Although the variable "count" will hold a count of integers,  
+        # this example will be converted to a string using "str(number)" 
+        # in order to display the incremental count from 0 to the "end" 
+        # value on the same line with a space " " separating each 
+        # number.  
+        count += str(number) + " "
+        
+    # The .strip() method will trim the final space " " from the end of 
+    # the string "count"  
+    return count
+
+
+# Call the function with 1 integer parameter.
+print(count_by_10(100))
+# Should print 0 10 20 30 40 50 60 70 80 90 100
