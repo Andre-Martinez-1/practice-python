@@ -379,6 +379,30 @@ The default value can be overridden with any valid increment.
 
 The incremental value will end the for loop before it reaches the end of range index position (end of range index minus 1).  
 
+Reminder: Correct syntax is critical
+Using precise syntax is critical when writing code in any programming language, including Python. Even a small typo can cause a syntax error and the automated Python-coded quiz grader will mark your code as incorrect. This reflects real life coding errors in the sense that a single error in spelling, case, punctuation, etc. can cause your code to fail. Coding problems caused by imprecise syntax will always be an issue whether you are learning a programming language or you are using programming skills on the job. So, it is critical to start the habit of being precise in your code now. 
 
+No credit will be given if there are any coding errors on the automated graded quizzes - including minor errors. Fortunately, you have 3 optional retake opportunities on the graded quizzes in this course. Additionally, you have unlimited retakes on practice quizzes and can review the videos and readings as many times as you need to master the concepts in this course.  
+
+Now, before starting the graded quiz, please review this list of common syntax errors coders make when writing code.
+
+Common syntax errors:
+Misspellings
+
+Incorrect indentations
+
+Missing or incorrect key characters:
+
+Parenthetical types - ( curved ), [ square ], { curly }
+
+Quote types - "straight-double" or 'straight-single', “curly-double” or ‘curly-single’
+
+Block introduction characters, like colons - :
+
+Data type mismatches
+
+Missing, incorrectly used, or misplaced Python reserved words
+
+Using the wrong case (uppercase/lowercase) - Python is a case-sensitive language 
 
 '''
