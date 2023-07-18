@@ -1,21 +1,21 @@
-'''print ("hello world")
+"""print ("hello world")
 
 print(6*2-5/(1+4)+3**2)
-'''
+"""
 
-# The value of 10*4 (40) is greater than 14+23 (37), therefore this 
+# The value of 10*4 (40) is greater than 14+23 (37), therefore this
 # comparison expression will return the Boolean value of True.
 
 
-'''print(10*4 > 14+23) # Should print True
+"""print(10*4 > 14+23) # Should print True
 
 # The letter "t" has a Unicode value of 116 and the letter "s" has a
 # Unicode value of 115. Since 116 is not less than 115, the 
 # comparison of "tall" < "short" (or 116 < 115) is False. 
 
 print("tall" < "short")  # Should print False
-'''
-'''Complicated python question for me good to look over
+"""
+"""Complicated python question for me good to look over
 def calculate_storage(filesize):
     block_size = 4096
     # Use floor division to calculate how many blocks are fully occupied
@@ -33,54 +33,54 @@ print(calculate_storage(1))    # Should be 4096
 print(calculate_storage(4096)) # Should be 4096
 print(calculate_storage(4097)) # Should be 8192
 print(calculate_storage(6000)) # Should be 8192
-'''
+"""
 
-#WHILE LOOP
+# WHILE LOOP
 
-'''multiplier = 1
+"""multiplier = 1
 result = multiplier*5
 while result <= 50:
   print(result)
   multiplier += 1
   result = multiplier*5
-print("Done")'''
+print("Done")"""
 
 # This while loop prints the multiples of 5 between 1 and 50. The
-# "multiplier" variable is initialized with the starting value of 1. 
-# The "result" variable is initialized with the value of the 
-# "multiplier" variable times 5. 
- 
-# The while loop specifies that the loop must iterate while it is True 
-# that the "result" is less than or equal to 50. Within the while loop, 
-# the code tells the Python interpreter to print the value of the 
+# "multiplier" variable is initialized with the starting value of 1.
+# The "result" variable is initialized with the value of the
+# "multiplier" variable times 5.
+
+# The while loop specifies that the loop must iterate while it is True
+# that the "result" is less than or equal to 50. Within the while loop,
+# the code tells the Python interpreter to print the value of the
 # "result" variable. Then, the "multiplier" is incremented by 1 and the
-# "result" is assigned the new value of the "multiplier" times 5. 
- 
-# The end of the while loop is indicated by the indentation of the next 
+# "result" is assigned the new value of the "multiplier" times 5.
+
+# The end of the while loop is indicated by the indentation of the next
 # line of code moving one tab to the left. At this point, the Python
 # interpreter automatically loops back to the beginning of the while
 # loop to check the condition again with the new value of the "result"
 # variable. When the while loop condition becomes False (meaning
 # "result" is no longer less than or equal to 50), the interpreter exits
-# the loop and reads the next line of code outside of the loop. In this 
-# case, that next line tells the interpreter to print the string "Done". 
- 
-# Click the "Run" button to check the result of this while loop.  
+# the loop and reads the next line of code outside of the loop. In this
+# case, that next line tells the interpreter to print the string "Done".
 
-'''Additional Recursion Sources
+# Click the "Run" button to check the result of this while loop.
+
+"""Additional Recursion Sources
 Additional Recursion Sources
 In the past videos, we visited the basic concepts of recursive functions.
 
 A recursive function must include a recursive case and base case. The recursive case calls the function again, with a different value. The base case returns a value without calling the same function.
 
-A recursive function will usually have this structure:'''
+A recursive function will usually have this structure:"""
 
-'''def recursive_function(parameters):
+"""def recursive_function(parameters):
     if base_case_condition(parameters):
         return base_case_value
-    recursive_function(modified_parameters)'''
+    recursive_function(modified_parameters)"""
 
-'''
+"""
 # This function will accept an integer variable "end" and count by 10
 # from 0 to the "end" value.
 def count_by_10(end):
@@ -109,41 +109,39 @@ def count_by_10(end):
 # Call the function with 1 integer parameter.
 print(count_by_10(100))
 # Should print 0 10 20 30 40 50 60 70 80 90 100
-'''
+"""
 
-# This function uses a set of nested for loops with the range() function 
-# to create a matrix of numbers. The upper range value in the range() 
-# function should be included in the matrix. The matrix should consist 
+
+# This function uses a set of nested for loops with the range() function
+# to create a matrix of numbers. The upper range value in the range()
+# function should be included in the matrix. The matrix should consist
 # of a set of numbers that fill both rows and columns.
 def matrix(initial_number, end_of_first_row):
-
-
     # It is an optional code style to assign the long variable names in the
-    # function parameters to shorter variable names. 
-    n1 = initial_number 
-    n2 = end_of_first_row+1  # include the upper range value with +1
+    # function parameters to shorter variable names.
+    n1 = initial_number
+    n2 = end_of_first_row + 1  # include the upper range value with +1
 
     # The first for loop will create the columns.
     for column in range(n1, n2):
-
         # The nested for loop will create the rows.
         for row in range(n1, n2):
-
             # To make the matrix of numbers easier to read, include a space
-            # between each number in the rows until the loop reaches the 
-            # end of the row. You can override the default behavior of the 
-            # print() function (which inserts a new line character after 
-            # the print command runs) by using the "end=" "" parameter 
-            # inside the print() function.  
-              print(column*row, end=" ")
+            # between each number in the rows until the loop reaches the
+            # end of the row. You can override the default behavior of the
+            # print() function (which inserts a new line character after
+            # the print command runs) by using the "end=" "" parameter
+            # inside the print() function.
+            print(column * row, end=" ")
 
-        # The row ends when the upper range value is encountered within the 
+        # The row ends when the upper range value is encountered within the
         # nested for loop. The outer (column) for loop should insert a new line
-        # to create the next row. Use the print() function new line default 
+        # to create the next row. Use the print() function new line default
         # behavior with an empty print() function:
         print()
 
-'''
+
+"""
 # Call the function with 2 integer parameters. 
 matrix(1, 4)
 # Should print:
@@ -151,9 +149,9 @@ matrix(1, 4)
 # 2 4 6 8 
 # 3 6 9 12 
 # 4 8 12 16 
-'''
+"""
 
-'''
+"""
 # For this example, the outer for loop uses an end of range index of 
 # 10. The value of index 10 will be 10-1, or 9.  
 for outer_loop in range(10):
@@ -169,9 +167,9 @@ for outer_loop in range(10):
         # by the "inner_loop" will be. The solution is to simply use 
         # the value of the "inner_loop" index, which is 8.
         print(inner_loop)
-'''
+"""
 
-'''
+"""
 # This function should count down by -2 from 11 to 1, so that it only
 # prints odd numbers. 
 
@@ -195,8 +193,8 @@ for n in range(11, 0, -2):
         print(n, end=" ")
 
 # Should print: 11, 9, 7, 5, 3, 1 once the problem is fixed.
-'''
-'''
+"""
+"""
 # For this example, the while loop will count down by threes starting 
 # from 18 and ending at 0.
 starting_number = 18
@@ -214,9 +212,9 @@ while starting_number >= 0:
     starting_number -= 3
 
 # Should print 18 15 12 9 6 3 0 
-'''
+"""
 
-'''
+"""
 # This function accepts a CEO's salary as a variable. 
 # It counts the number of digits in the salary and 
 # returns the sentence like:
@@ -257,9 +255,9 @@ def X_figure(salary):
 print("The CEO has a " + str(X_figure(2300000)) + "-figure salary.")
 
 # Should print"The CEO has a 7-figure salary."
-'''
+"""
 
-'''
+"""
 # This function will accept two integer variables: the floor
 # number that a passenger "enter"s an elevator and the floor
 # number the passenger is going to "exit". Then, the function
@@ -349,4 +347,15 @@ def elevator_floor(enter, exit):
 # Call the function with 2 integer parameters. 
 print(elevator_floor(1,4)) # Should print Going up: 1 | 2 | 3 | 4
 print(elevator_floor(6,2)) # Should print Going down: 6 | 5 | 4 | 3 | 2
-'''
+"""
+"""
+num1 = 0
+num2 = 0
+
+for x in range(5):
+    num1 = x
+    for y in range (14):
+         num2 = y + 3
+
+print (num1 + num2)
+"""
